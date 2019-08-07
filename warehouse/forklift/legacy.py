@@ -41,7 +41,6 @@ from sqlalchemy.orm.exc import MultipleResultsFound, NoResultFound
 from warehouse import forms
 from warehouse.admin.squats import Squat
 from warehouse.classifiers.models import Classifier
-from warehouse.errors import DeniedMacaroonInvalid
 from warehouse.metrics import IMetricsService
 from warehouse.packaging.interfaces import IFileStorage
 from warehouse.packaging.models import (
@@ -943,13 +942,9 @@ def file_upload(request):
     # added above.
     allowed = request.has_permission("upload", project)
     if not allowed:
-        if isinstance(allowed, DeniedMacaroonInvalid):
-            msg = (
-                "This API token is not valid for project '{0}'."
-                "See {1} for more information."
-            ).format(project.name, request.help_url(_anchor="project-name"))
-        else:
-            msg = (
+        reason = getattr(allowed, "reason", None)
+        msg = (
+            (
                 "The user '{0}' isn't allowed to upload to project '{1}'. "
                 "See {2} for more information."
             ).format(
@@ -957,6 +952,9 @@ def file_upload(request):
                 project.name,
                 request.help_url(_anchor="project-name"),
             )
+            if reason is None
+            else allowed.msg
+        )
         raise _exc_with_message(HTTPForbidden, msg)
 
     # Update name if it differs but is still equivalent. We don't need to check if
