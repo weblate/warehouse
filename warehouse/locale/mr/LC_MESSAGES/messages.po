@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Warehouse VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/pypa/warehouse/issues/new\n"
 "POT-Creation-Date: 2019-12-10 17:43-0600\n"
-"PO-Revision-Date: 2019-12-11 08:17+0000\n"
+"PO-Revision-Date: 2019-12-13 01:12+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://hosted.weblate.org/projects/pypa/warehouse/"
 "mr/>\n"
@@ -44,94 +44,99 @@ msgid ""
 "This username is already being used by another account. Choose a different "
 "username."
 msgstr ""
+"हे वापरकर्तानाव आधीपासूनच दुसर्‍या खात्याने वापरलेले आहे. भिन्न वापरकर्तानाव "
+"निवडा."
 
 #: warehouse/accounts/forms.py:113
 msgid "The password is invalid. Try again."
-msgstr ""
+msgstr "संकेतशब्द अवैध आहे. पुन्हा प्रयत्न करा."
 
 #: warehouse/accounts/forms.py:117 warehouse/accounts/views.py:64
 msgid "There have been too many unsuccessful login attempts. Try again later."
-msgstr ""
+msgstr "बरेच लॉगिन प्रयत्न अयशस्वी झाले. पुन्हा प्रयत्न करा."
 
 #: warehouse/accounts/forms.py:139
 msgid "Your passwords don't match. Try again."
-msgstr ""
+msgstr "आपले संकेतशब्द जुळत नाहीत. पुन्हा प्रयत्न करा."
 
 #: warehouse/accounts/forms.py:170
 msgid "The email address isn't valid. Try again."
-msgstr ""
+msgstr "ईमेल पत्ता वैध नाही. पुन्हा प्रयत्न करा."
 
 #: warehouse/accounts/forms.py:180
 msgid ""
 "This email address is already being used by this account. Use a different "
 "email."
-msgstr ""
+msgstr "हा ईमेल पत्ता आधीपासून या खात्याने वापरला आहे. भिन्न ईमेल वापरा."
 
 #: warehouse/accounts/forms.py:187
 msgid ""
 "This email address is already being used by another account. Use a different "
 "email."
-msgstr ""
+msgstr "हा ईमेल पत्ता आधीपासून दुसर्‍या खात्याने वापरला आहे. भिन्न ईमेल वापरा."
 
 #: warehouse/accounts/forms.py:196
 msgid "You can't use an email address from this domain. Use a different email."
-msgstr ""
+msgstr "आपण या डोमेनकडून ईमेल पत्ता वापरू शकत नाही. भिन्न ईमेल वापरा."
 
 #: warehouse/accounts/forms.py:218
+#, fuzzy
 msgid "The name is too long. Choose a name with 100 characters or less."
-msgstr ""
+msgstr "नाव खूप मोठे आहे. १०० किंवा त्याहून कमी वर्ण असलेले नाव निवडा."
 
 #: warehouse/accounts/forms.py:282
 msgid "Invalid TOTP code."
-msgstr ""
+msgstr "अवैध TOTP कोड."
 
 #: warehouse/accounts/forms.py:299
 msgid "Invalid WebAuthn assertion: Bad payload"
-msgstr ""
+msgstr "अवैध WebAuthn प्रतिपादन: खराब पेलोड"
 
 #: warehouse/accounts/forms.py:332
 msgid "No user found with that username or email"
-msgstr ""
+msgstr "वापरकर्तानाव किंवा ईमेल असलेला कोणताही वापरकर्ता आढळला नाही"
 
 #: warehouse/accounts/views.py:204 warehouse/accounts/views.py:258
 #: warehouse/accounts/views.py:259 warehouse/accounts/views.py:285
 #: warehouse/accounts/views.py:286
 msgid "Invalid or expired two factor login."
-msgstr ""
+msgstr "अवैध किंवा कालबाह्य दोन घटक लॉगिन."
 
 #: warehouse/accounts/views.py:253
 msgid "Already authenticated"
-msgstr ""
+msgstr "आधीच प्रमाणीकृत"
 
 #: warehouse/accounts/views.py:317
 msgid "Successful WebAuthn assertion"
-msgstr ""
+msgstr "यशस्वी WebAuthn प्रतिपादन"
 
 #: warehouse/accounts/views.py:398
 msgid ""
 "New user registration temporarily disabled. See https://pypi.org/help#admin-"
 "intervention for details."
 msgstr ""
+"नवीन वापरकर्ता नोंदणी तात्पुरती अक्षम केली. तपशीलांसाठी https://pypi.org/help"
+"#admin-intervention पहा."
 
 #: warehouse/accounts/views.py:495
 msgid "Expired token: request a new password reset link"
-msgstr ""
+msgstr "कालबाह्य टोकन: नवीन संकेतशब्द रीसेट दुव्याची विनंती करा"
 
 #: warehouse/accounts/views.py:497
 msgid "Invalid token: request a new password reset link"
-msgstr ""
+msgstr "अवैध टोकन: नवीन संकेतशब्द रीसेट दुव्याची विनंती करा"
 
 #: warehouse/accounts/views.py:499 warehouse/accounts/views.py:577
 msgid "Invalid token: no token supplied"
-msgstr ""
+msgstr "अवैध टोकन: कोणतेही टोकन दिले नाही"
 
 #: warehouse/accounts/views.py:503
 msgid "Invalid token: not a password reset token"
-msgstr ""
+msgstr "अवैध टोकन: संकेतशब्द रीसेट टोकन नाही"
 
 #: warehouse/accounts/views.py:508
 msgid "Invalid token: user not found"
-msgstr ""
+msgstr "अवैध टोकन: वापरकर्ता आढळला नाही"
 
 #: warehouse/accounts/views.py:515
 msgid "Invalid token: user has logged in since this token was requested"
